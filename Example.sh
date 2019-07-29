@@ -30,7 +30,7 @@ Semeval_directory=/mnt/WSI_testing/test_data
 Semeval_evaluation_directory=/mnt/WSI_testing/test_data/evaluation
 #regularization to be given to KL, when optimizing for wordctxt2sense
 regularizer=1e-2 
-'''
+
 mkdir ${DIR}
 # Clean the corpus from non alpha-numeric symbols
 scripts/clean_corpus.sh $CORPUS > $CORPUS.clean
@@ -79,8 +79,6 @@ python Calculate_similarityscores.py ${DIR}/Word2Sense.pkl ${similarity_testpath
 #Preprocessing to extract contexts from xml file and converting them to tsvd format
 python Preprocess_wordctxt2sense.py  ${Semeval_directory}/nouns  ${DIR}/train.vocab ${DIR}/Raw_Word2Sense.pkl
 python Preprocess_wordctxt2sense.py  ${Semeval_directory}/verbs  ${DIR}/train.vocab ${DIR}/Raw_Word2Sense.pkl
-'''
-cd ..
 
 #function that calls Inference file repeatedly
 func_WSI () {
