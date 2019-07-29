@@ -1,0 +1,3 @@
+[submodule "warplda"]
+	path = warplda
+	url = git@github.com:abhishekpanigrahi1996/warplda.git
