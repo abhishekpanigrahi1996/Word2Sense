@@ -30,10 +30,10 @@ Semeval_directory=/mnt/WSI_testing/test_data
 Semeval_evaluation_directory=/mnt/WSI_testing/test_data/evaluation
 #regularization to be given to KL, when optimizing for wordctxt2sense
 regularizer=1e-2 
-'''
+
 mkdir ${DIR}
 # Clean the corpus from non alpha-numeric symbols
-#scripts/clean_corpus.sh $CORPUS > $CORPUS.clean
+scripts/clean_corpus.sh $CORPUS > $CORPUS.clean
 
 # Create collection of word-context pairs:
 
@@ -64,19 +64,14 @@ make -j
 ./warplda -prefix ${DIR}/train --k ${num_topics} --niter ${num_iterations} --alpha ${alpha} --beta ${beta}
 #Now get the word topic distribution form the estimate file
 cd ../../..
-'''
+
 #Code to compute the correct topic distribution
-cd ..
-'''
 python Topic_embeddings.py ${DIR}/train.model ${DIR}/train.vocab ${DIR}/Topic_embeddings.pkl ${DIR}/sparse_topic_model.txt
 #Code to find the KL divergence between topics
 python Calculate_topicJS.py ${num_topics} ${num_pools} ${num_topwords_to_compare} ${DIR}/Topic_embeddings.pkl ${DIR}/Topic_JS.pkl 
 #Code to find Word2sense embeddings 
-'''
-'''
 python Word2Sense.py  ${DIR}/train.z.estimate ${DIR}/train.vocab ${DIR}/counts.contexts.vocab ${DIR}/Topic_embeddings.pkl ${DIR}/Topic_JS.pkl  ${DIR}/Word2Sense.pkl ${DIR}/Raw_Word2Sense.pkl ${DIR}/Word_probability.pkl ${DIR}/Topic_groups.pkl ${num_topics} ${alpha} ${embedding_nnz} ${final_embedding_dim}
 #Code to find the performance of the new embeddings in various similarity tasks
-
 python Calculate_similarityscores.py ${DIR}/Word2Sense.pkl ${similarity_testpath}
 
 
@@ -126,6 +121,6 @@ for filename in ${Semeval_directory}/verbs/parsed_files/*.parse.clean.tsvd; do
     func_WSI "$filename" $regularizer ${DIR}/sparse_topic_model.txt ${DIR}/Word_probability.pkl ${DIR}/train.vocab ${num_topics}&
 done
 
-'''
+
 #Compute scores in WSI dataset and also compute the wordctxt2sense vectors for word in context in Semeval 2010 dataset
 python Compute_Wordctxt2Sense.py ${Semeval_evaluation_directory} ${Semeval_directory}  ${DIR}/Topic_JS.pkl ".inferred_topics"  ${DIR}/Topic_groups.pkl ${num_topics} ${final_embedding_dim}
