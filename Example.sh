@@ -48,7 +48,7 @@ python hyperwords/counts2pmi.py --cds 1.0 ${DIR}/counts ${DIR}/pmi
 
 cd ..
 # Form a tsvd file from the count matrix formed
-python write_tsvd.py ${DIR}/pmi.count_matrix.npz ${DIR}/pmi.count_matrix.tsvd
+python Write_tsvd.py ${DIR}/pmi.count_matrix.npz ${DIR}/pmi.count_matrix.tsvd
 
 #start warplda
 cd warplda
@@ -68,9 +68,9 @@ cd ../../..
 #Code to compute the correct topic distribution
 cd ..
 '''
-python topic_embeddings.py ${DIR}/train.model ${DIR}/train.vocab ${DIR}/Topic_embeddings.pkl ${DIR}/sparse_topic_model.txt
+python Topic_embeddings.py ${DIR}/train.model ${DIR}/train.vocab ${DIR}/Topic_embeddings.pkl ${DIR}/sparse_topic_model.txt
 #Code to find the KL divergence between topics
-python calculate_topicJS.py ${num_topics} ${num_pools} ${num_topwords_to_compare} ${DIR}/Topic_embeddings.pkl ${DIR}/Topic_JS.pkl 
+python Calculate_topicJS.py ${num_topics} ${num_pools} ${num_topwords_to_compare} ${DIR}/Topic_embeddings.pkl ${DIR}/Topic_JS.pkl 
 #Code to find Word2sense embeddings 
 '''
 '''
@@ -128,4 +128,4 @@ done
 
 '''
 #Compute scores in WSI dataset and also compute the wordctxt2sense vectors for word in context in Semeval 2010 dataset
-python compute_Wordctxt2Sense.py ${Semeval_evaluation_directory} ${Semeval_directory}  ${DIR}/Topic_JS.pkl ".inferred_topics"  ${DIR}/Topic_groups.pkl ${num_topics} ${final_embedding_dim}
+python Compute_Wordctxt2Sense.py ${Semeval_evaluation_directory} ${Semeval_directory}  ${DIR}/Topic_JS.pkl ".inferred_topics"  ${DIR}/Topic_groups.pkl ${num_topics} ${final_embedding_dim}
