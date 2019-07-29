@@ -6,19 +6,19 @@ cd preprocessing
 #unzip text8.zip
 
 #specify the corpus path
-CORPUS=/mnt/wacky_testing/combined_parsed
+CORPUS=/mnt/text8_testing/text8
 #specify the directory where you want your output data to be stored
-DIR=/mnt/wacky_testing_part2
+DIR=/mnt/text8_testing
 #hyperparameters of warplda code, num_topics = number of senses you want to capture, num_oterations = number of MH iterations of LDA desired
 #alpha = Dirichlet parameter for doc-topic distribution beta = Dirichlet parameter for topic-word distribution
-num_topics=3000
-num_iterations=1000
+num_topics=300
+num_iterations=300
 alpha=0.1
 beta=0.001
 #Desired No. of nonzeros in the final embedding of a word (approx 1/30th fraction of num topics works the best for wackypedia)
-embedding_nnz=100
+embedding_nnz=10
 #Final embedding dimension of a word; approx. 3/4th of the total number of topics works the best for wackypedia
-final_embedding_dim=2250
+final_embedding_dim=225
 #Dir where all the similarity test files are kept
 similarity_testpath=preprocessing/testsets
 #number of parallel threads you can afford while computing topic similarity matrix
@@ -30,7 +30,7 @@ Semeval_directory=/mnt/WSI_testing/test_data
 Semeval_evaluation_directory=/mnt/WSI_testing/test_data/evaluation
 #regularization to be given to KL, when optimizing for wordctxt2sense
 regularizer=1e-2 
-
+'''
 mkdir ${DIR}
 # Clean the corpus from non alpha-numeric symbols
 scripts/clean_corpus.sh $CORPUS > $CORPUS.clean
@@ -74,13 +74,13 @@ python Word2Sense.py  ${DIR}/train.z.estimate ${DIR}/train.vocab ${DIR}/counts.c
 #Code to find the performance of the new embeddings in various similarity tasks
 python Calculate_similarityscores.py ${DIR}/Word2Sense.pkl ${similarity_testpath}
 
-
 #Wordctxt2sense4WSI
 #We show the performance of Wordctxt2sense on WSI Semeval 2010 dataset
 #Preprocessing to extract contexts from xml file and converting them to tsvd format
 python Preprocess_wordctxt2sense.py  ${Semeval_directory}/nouns  ${DIR}/train.vocab ${DIR}/Raw_Word2Sense.pkl
 python Preprocess_wordctxt2sense.py  ${Semeval_directory}/verbs  ${DIR}/train.vocab ${DIR}/Raw_Word2Sense.pkl
-
+'''
+cd ..
 
 #function that calls Inference file repeatedly
 func_WSI () {

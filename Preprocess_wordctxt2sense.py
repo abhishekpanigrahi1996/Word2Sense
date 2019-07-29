@@ -86,7 +86,7 @@ def main():
     #create clean files for all the files
     for file in os.listdir(directory+'/parsed_files'):
         if file.endswith('.parse'):
-            os.system("omarlevy/scripts/clean_corpus.sh " + directory + "/parsed_files/" + file +  " > " +  directory + "/parsed_files/" + file + ".clean")
+            os.system("preprocessing/scripts/clean_corpus.sh " + directory + "/parsed_files/" + file +  " > " +  directory + "/parsed_files/" + file + ".clean")
 
     #create tsvd format of each file
     for file in os.listdir(directory+'/parsed_files'):

@@ -1,0 +1,459 @@
+./Example.sh: 1: ./Example.sh: !/bin/sh: not found
+mkdir: cannot create directory ‘/mnt/text8_testing’: File exists
+(11815, 11815)
+fatal: destination path 'gflags' already exists and is not an empty directory.
+HEAD is now at d701cea... Merge pull request #150 from LuminateWireless/fix-bazel-build
+/mnt/Word2Sense/Word2Sense/warplda/release /mnt/Word2Sense/Word2Sense/warplda
+CMake Warning at gflags/CMakeLists.txt:525 (export):
+  Cannot create package registry file:
+
+    /home/t-abpani/.cmake/packages/gflags/4439e70f537c20b831011f8b30569453
+
+  Permission denied
+
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/Word2Sense/Word2Sense/warplda/release
+/mnt/Word2Sense/Word2Sense/warplda
+/mnt/Word2Sense/Word2Sense/warplda/debug /mnt/Word2Sense/Word2Sense/warplda
+CMake Warning at gflags/CMakeLists.txt:525 (export):
+  Cannot create package registry file:
+
+    /home/t-abpani/.cmake/packages/gflags/2d3738735c53ca0ab40cb3705d58bf0d
+
+  Permission denied
+
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/Word2Sense/Word2Sense/warplda/debug
+/mnt/Word2Sense/Word2Sense/warplda
+[ 37%] Built target common
+[ 62%] Built target gflags_nothreads_static
+[ 75%] Built target format
+[100%] Built target warplda
+Reading corpus from /mnt/text8_testing/pmi.count_matrix.tsvd
+Vocabulary will be wrote to /mnt/text8_testing/train.vocab
+Output will be wrote as /mnt/text8_testing/train.bin
+Done. Processed 0 tokens.
+Bigraph loaded from /mnt/text8_testing/train.bin, 11815 documents, 11815 unique tokens, 6601890 total words
+Initialization finished.
+Iteration 0, 0.176107 s, 37.49 Mtokens/s, log_likelihood (per token) -19.651682
+Iteration 1, 0.133472 s, 49.46 Mtokens/s, log_likelihood (per token) -18.034506
+Iteration 2, 0.118734 s, 55.60 Mtokens/s, log_likelihood (per token) -16.932452
+Iteration 3, 0.116327 s, 56.75 Mtokens/s, log_likelihood (per token) -16.198391
+Iteration 4, 0.108163 s, 61.04 Mtokens/s, log_likelihood (per token) -15.652249
+Iteration 5, 0.095377 s, 69.22 Mtokens/s, log_likelihood (per token) -15.219688
+Iteration 6, 0.093209 s, 70.83 Mtokens/s, log_likelihood (per token) -14.862262
+Iteration 7, 0.095922 s, 68.83 Mtokens/s, log_likelihood (per token) -14.560649
+Iteration 8, 0.123070 s, 53.64 Mtokens/s, log_likelihood (per token) -14.297619
+Iteration 9, 0.079234 s, 83.32 Mtokens/s, log_likelihood (per token) -14.065928
+Iteration 10, 0.076191 s, 86.65 Mtokens/s, log_likelihood (per token) -13.858550
+Iteration 11, 0.073905 s, 89.33 Mtokens/s, log_likelihood (per token) -13.671281
+Iteration 12, 0.071302 s, 92.59 Mtokens/s, log_likelihood (per token) -13.501805
+Iteration 13, 0.069733 s, 94.67 Mtokens/s, log_likelihood (per token) -13.346631
+Iteration 14, 0.074254 s, 88.91 Mtokens/s, log_likelihood (per token) -13.203164
+Iteration 15, 0.067873 s, 97.27 Mtokens/s, log_likelihood (per token) -13.070756
+Iteration 16, 0.064643 s, 102.13 Mtokens/s, log_likelihood (per token) -12.948042
+Iteration 17, 0.063187 s, 104.48 Mtokens/s, log_likelihood (per token) -12.832208
+Iteration 18, 0.062737 s, 105.23 Mtokens/s, log_likelihood (per token) -12.722550
+Iteration 19, 0.071094 s, 92.86 Mtokens/s, log_likelihood (per token) -12.620818
+Iteration 20, 0.084908 s, 77.75 Mtokens/s, log_likelihood (per token) -12.523869
+Iteration 21, 0.066042 s, 99.97 Mtokens/s, log_likelihood (per token) -12.433116
+Iteration 22, 0.059199 s, 111.52 Mtokens/s, log_likelihood (per token) -12.347215
+Iteration 23, 0.058363 s, 113.12 Mtokens/s, log_likelihood (per token) -12.266682
+Iteration 24, 0.056814 s, 116.20 Mtokens/s, log_likelihood (per token) -12.190370
+Iteration 25, 0.070438 s, 93.73 Mtokens/s, log_likelihood (per token) -12.118493
+Iteration 26, 0.064258 s, 102.74 Mtokens/s, log_likelihood (per token) -12.050201
+Iteration 27, 0.067294 s, 98.11 Mtokens/s, log_likelihood (per token) -11.986066
+Iteration 28, 0.067713 s, 97.50 Mtokens/s, log_likelihood (per token) -11.924234
+Iteration 29, 0.066234 s, 99.68 Mtokens/s, log_likelihood (per token) -11.866096
+Iteration 30, 0.067179 s, 98.27 Mtokens/s, log_likelihood (per token) -11.811748
+Iteration 31, 0.069911 s, 94.43 Mtokens/s, log_likelihood (per token) -11.759505
+Iteration 32, 0.066196 s, 99.73 Mtokens/s, log_likelihood (per token) -11.710274
+Iteration 33, 0.069520 s, 94.96 Mtokens/s, log_likelihood (per token) -11.664602
+Iteration 34, 0.052313 s, 126.20 Mtokens/s, log_likelihood (per token) -11.621416
+Iteration 35, 0.046169 s, 142.99 Mtokens/s, log_likelihood (per token) -11.580845
+Iteration 36, 0.051309 s, 128.67 Mtokens/s, log_likelihood (per token) -11.541143
+Iteration 37, 0.045417 s, 145.36 Mtokens/s, log_likelihood (per token) -11.504457
+Iteration 38, 0.045148 s, 146.23 Mtokens/s, log_likelihood (per token) -11.468544
+Iteration 39, 0.044896 s, 147.05 Mtokens/s, log_likelihood (per token) -11.434495
+Iteration 40, 0.044448 s, 148.53 Mtokens/s, log_likelihood (per token) -11.401999
+Iteration 41, 0.044016 s, 149.99 Mtokens/s, log_likelihood (per token) -11.371135
+Iteration 42, 0.043485 s, 151.82 Mtokens/s, log_likelihood (per token) -11.341938
+Iteration 43, 0.043145 s, 153.02 Mtokens/s, log_likelihood (per token) -11.314075
+Iteration 44, 0.043109 s, 153.14 Mtokens/s, log_likelihood (per token) -11.286525
+Iteration 45, 0.042703 s, 154.60 Mtokens/s, log_likelihood (per token) -11.260004
+Iteration 46, 0.042638 s, 154.84 Mtokens/s, log_likelihood (per token) -11.235411
+Iteration 47, 0.042160 s, 156.59 Mtokens/s, log_likelihood (per token) -11.211930
+Iteration 48, 0.052298 s, 126.24 Mtokens/s, log_likelihood (per token) -11.189280
+Iteration 49, 0.041821 s, 157.86 Mtokens/s, log_likelihood (per token) -11.167841
+Iteration 50, 0.041449 s, 159.28 Mtokens/s, log_likelihood (per token) -11.147028
+Iteration 51, 0.044636 s, 147.91 Mtokens/s, log_likelihood (per token) -11.126900
+Iteration 52, 0.041037 s, 160.88 Mtokens/s, log_likelihood (per token) -11.107698
+Iteration 53, 0.040854 s, 161.60 Mtokens/s, log_likelihood (per token) -11.089052
+Iteration 54, 0.040742 s, 162.04 Mtokens/s, log_likelihood (per token) -11.070883
+Iteration 55, 0.040455 s, 163.19 Mtokens/s, log_likelihood (per token) -11.053456
+Iteration 56, 0.040298 s, 163.83 Mtokens/s, log_likelihood (per token) -11.037255
+Iteration 57, 0.039866 s, 165.60 Mtokens/s, log_likelihood (per token) -11.020901
+Iteration 58, 0.051292 s, 128.71 Mtokens/s, log_likelihood (per token) -11.004938
+Iteration 59, 0.061226 s, 107.83 Mtokens/s, log_likelihood (per token) -10.989339
+Iteration 60, 0.060779 s, 108.62 Mtokens/s, log_likelihood (per token) -10.974703
+Iteration 61, 0.048797 s, 135.29 Mtokens/s, log_likelihood (per token) -10.960365
+Iteration 62, 0.062050 s, 106.40 Mtokens/s, log_likelihood (per token) -10.946616
+Iteration 63, 0.064115 s, 102.97 Mtokens/s, log_likelihood (per token) -10.932863
+Iteration 64, 0.066199 s, 99.73 Mtokens/s, log_likelihood (per token) -10.919804
+Iteration 65, 0.069068 s, 95.59 Mtokens/s, log_likelihood (per token) -10.907311
+Iteration 66, 0.057244 s, 115.33 Mtokens/s, log_likelihood (per token) -10.894728
+Iteration 67, 0.050931 s, 129.62 Mtokens/s, log_likelihood (per token) -10.882614
+Iteration 68, 0.044660 s, 147.83 Mtokens/s, log_likelihood (per token) -10.871339
+Iteration 69, 0.053226 s, 124.03 Mtokens/s, log_likelihood (per token) -10.860194
+Iteration 70, 0.048578 s, 135.90 Mtokens/s, log_likelihood (per token) -10.849673
+Iteration 71, 0.052066 s, 126.80 Mtokens/s, log_likelihood (per token) -10.839006
+Iteration 72, 0.053184 s, 124.13 Mtokens/s, log_likelihood (per token) -10.828893
+Iteration 73, 0.066350 s, 99.50 Mtokens/s, log_likelihood (per token) -10.819059
+Iteration 74, 0.059354 s, 111.23 Mtokens/s, log_likelihood (per token) -10.808723
+Iteration 75, 0.049563 s, 133.20 Mtokens/s, log_likelihood (per token) -10.799926
+Iteration 76, 0.047330 s, 139.49 Mtokens/s, log_likelihood (per token) -10.790205
+Iteration 77, 0.057483 s, 114.85 Mtokens/s, log_likelihood (per token) -10.780971
+Iteration 78, 0.052204 s, 126.46 Mtokens/s, log_likelihood (per token) -10.772060
+Iteration 79, 0.043442 s, 151.97 Mtokens/s, log_likelihood (per token) -10.764087
+Iteration 80, 0.046276 s, 142.66 Mtokens/s, log_likelihood (per token) -10.755777
+Iteration 81, 0.050670 s, 130.29 Mtokens/s, log_likelihood (per token) -10.747420
+Iteration 82, 0.049858 s, 132.41 Mtokens/s, log_likelihood (per token) -10.739750
+Iteration 83, 0.049787 s, 132.60 Mtokens/s, log_likelihood (per token) -10.731868
+Iteration 84, 0.048145 s, 137.12 Mtokens/s, log_likelihood (per token) -10.724263
+Iteration 85, 0.042992 s, 153.56 Mtokens/s, log_likelihood (per token) -10.716546
+Iteration 86, 0.047211 s, 139.84 Mtokens/s, log_likelihood (per token) -10.709451
+Iteration 87, 0.044933 s, 146.93 Mtokens/s, log_likelihood (per token) -10.702193
+Iteration 88, 0.058992 s, 111.91 Mtokens/s, log_likelihood (per token) -10.695481
+Iteration 89, 0.049802 s, 132.56 Mtokens/s, log_likelihood (per token) -10.688705
+Iteration 90, 0.046945 s, 140.63 Mtokens/s, log_likelihood (per token) -10.681892
+Iteration 91, 0.058058 s, 113.71 Mtokens/s, log_likelihood (per token) -10.675349
+Iteration 92, 0.081424 s, 81.08 Mtokens/s, log_likelihood (per token) -10.668608
+Iteration 93, 0.048062 s, 137.36 Mtokens/s, log_likelihood (per token) -10.662657
+Iteration 94, 0.045316 s, 145.69 Mtokens/s, log_likelihood (per token) -10.656540
+Iteration 95, 0.068109 s, 96.93 Mtokens/s, log_likelihood (per token) -10.650202
+Iteration 96, 0.062265 s, 106.03 Mtokens/s, log_likelihood (per token) -10.644232
+Iteration 97, 0.062282 s, 106.00 Mtokens/s, log_likelihood (per token) -10.638180
+Iteration 98, 0.059973 s, 110.08 Mtokens/s, log_likelihood (per token) -10.632805
+Iteration 99, 0.060213 s, 109.64 Mtokens/s, log_likelihood (per token) -10.627334
+Iteration 100, 0.061768 s, 106.88 Mtokens/s, log_likelihood (per token) -10.621933
+Iteration 101, 0.066446 s, 99.36 Mtokens/s, log_likelihood (per token) -10.616524
+Iteration 102, 0.059766 s, 110.46 Mtokens/s, log_likelihood (per token) -10.610930
+Iteration 103, 0.056400 s, 117.05 Mtokens/s, log_likelihood (per token) -10.605745
+Iteration 104, 0.049667 s, 132.92 Mtokens/s, log_likelihood (per token) -10.600891
+Iteration 105, 0.058255 s, 113.33 Mtokens/s, log_likelihood (per token) -10.595995
+Iteration 106, 0.058326 s, 113.19 Mtokens/s, log_likelihood (per token) -10.590872
+Iteration 107, 0.049508 s, 133.35 Mtokens/s, log_likelihood (per token) -10.586413
+Iteration 108, 0.044720 s, 147.63 Mtokens/s, log_likelihood (per token) -10.581609
+Iteration 109, 0.055275 s, 119.44 Mtokens/s, log_likelihood (per token) -10.576841
+Iteration 110, 0.042218 s, 156.38 Mtokens/s, log_likelihood (per token) -10.572370
+Iteration 111, 0.046411 s, 142.25 Mtokens/s, log_likelihood (per token) -10.567774
+Iteration 112, 0.048211 s, 136.94 Mtokens/s, log_likelihood (per token) -10.563255
+Iteration 113, 0.051163 s, 129.04 Mtokens/s, log_likelihood (per token) -10.558824
+Iteration 114, 0.050110 s, 131.75 Mtokens/s, log_likelihood (per token) -10.554285
+Iteration 115, 0.055026 s, 119.98 Mtokens/s, log_likelihood (per token) -10.550085
+Iteration 116, 0.045922 s, 143.76 Mtokens/s, log_likelihood (per token) -10.545881
+Iteration 117, 0.052142 s, 126.61 Mtokens/s, log_likelihood (per token) -10.541812
+Iteration 118, 0.066149 s, 99.80 Mtokens/s, log_likelihood (per token) -10.537975
+Iteration 119, 0.036262 s, 182.06 Mtokens/s, log_likelihood (per token) -10.534191
+Iteration 120, 0.035953 s, 183.63 Mtokens/s, log_likelihood (per token) -10.530593
+Iteration 121, 0.036253 s, 182.11 Mtokens/s, log_likelihood (per token) -10.526770
+Iteration 122, 0.036252 s, 182.11 Mtokens/s, log_likelihood (per token) -10.522850
+Iteration 123, 0.035693 s, 184.96 Mtokens/s, log_likelihood (per token) -10.518650
+Iteration 124, 0.037171 s, 177.61 Mtokens/s, log_likelihood (per token) -10.515287
+Iteration 125, 0.035546 s, 185.73 Mtokens/s, log_likelihood (per token) -10.511532
+Iteration 126, 0.035885 s, 183.97 Mtokens/s, log_likelihood (per token) -10.507613
+Iteration 127, 0.036034 s, 183.21 Mtokens/s, log_likelihood (per token) -10.503878
+Iteration 128, 0.035620 s, 185.34 Mtokens/s, log_likelihood (per token) -10.500659
+Iteration 129, 0.038351 s, 172.14 Mtokens/s, log_likelihood (per token) -10.497115
+Iteration 130, 0.043493 s, 151.79 Mtokens/s, log_likelihood (per token) -10.493398
+Iteration 131, 0.041118 s, 160.56 Mtokens/s, log_likelihood (per token) -10.490348
+Iteration 132, 0.051854 s, 127.32 Mtokens/s, log_likelihood (per token) -10.487282
+Iteration 133, 0.047502 s, 138.98 Mtokens/s, log_likelihood (per token) -10.483885
+Iteration 134, 0.043414 s, 152.07 Mtokens/s, log_likelihood (per token) -10.480308
+Iteration 135, 0.048209 s, 136.94 Mtokens/s, log_likelihood (per token) -10.476999
+Iteration 136, 0.043417 s, 152.06 Mtokens/s, log_likelihood (per token) -10.474323
+Iteration 137, 0.042163 s, 156.58 Mtokens/s, log_likelihood (per token) -10.471522
+Iteration 138, 0.048662 s, 135.67 Mtokens/s, log_likelihood (per token) -10.468186
+Iteration 139, 0.051342 s, 128.59 Mtokens/s, log_likelihood (per token) -10.465082
+Iteration 140, 0.045796 s, 144.16 Mtokens/s, log_likelihood (per token) -10.461602
+Iteration 141, 0.042453 s, 155.51 Mtokens/s, log_likelihood (per token) -10.458637
+Iteration 142, 0.039926 s, 165.35 Mtokens/s, log_likelihood (per token) -10.455675
+Iteration 143, 0.045017 s, 146.65 Mtokens/s, log_likelihood (per token) -10.452506
+Iteration 144, 0.040067 s, 164.77 Mtokens/s, log_likelihood (per token) -10.449693
+Iteration 145, 0.038655 s, 170.79 Mtokens/s, log_likelihood (per token) -10.446540
+Iteration 146, 0.038783 s, 170.23 Mtokens/s, log_likelihood (per token) -10.444205
+Iteration 147, 0.038255 s, 172.57 Mtokens/s, log_likelihood (per token) -10.442015
+Iteration 148, 0.035183 s, 187.64 Mtokens/s, log_likelihood (per token) -10.438824
+Iteration 149, 0.035791 s, 184.46 Mtokens/s, log_likelihood (per token) -10.436299
+Iteration 150, 0.035786 s, 184.48 Mtokens/s, log_likelihood (per token) -10.434043
+Iteration 151, 0.041264 s, 159.99 Mtokens/s, log_likelihood (per token) -10.431697
+Iteration 152, 0.035783 s, 184.50 Mtokens/s, log_likelihood (per token) -10.429275
+Iteration 153, 0.036090 s, 182.93 Mtokens/s, log_likelihood (per token) -10.427166
+Iteration 154, 0.035731 s, 184.77 Mtokens/s, log_likelihood (per token) -10.424323
+Iteration 155, 0.035053 s, 188.34 Mtokens/s, log_likelihood (per token) -10.421900
+Iteration 156, 0.035832 s, 184.25 Mtokens/s, log_likelihood (per token) -10.419725
+Iteration 157, 0.035351 s, 186.75 Mtokens/s, log_likelihood (per token) -10.417113
+Iteration 158, 0.035536 s, 185.78 Mtokens/s, log_likelihood (per token) -10.414607
+Iteration 159, 0.035252 s, 187.28 Mtokens/s, log_likelihood (per token) -10.412462
+Iteration 160, 0.047759 s, 138.23 Mtokens/s, log_likelihood (per token) -10.410287
+Iteration 161, 0.054800 s, 120.47 Mtokens/s, log_likelihood (per token) -10.407327
+Iteration 162, 0.035002 s, 188.61 Mtokens/s, log_likelihood (per token) -10.404723
+Iteration 163, 0.035257 s, 187.25 Mtokens/s, log_likelihood (per token) -10.402675
+Iteration 164, 0.035056 s, 188.32 Mtokens/s, log_likelihood (per token) -10.400615
+Iteration 165, 0.037172 s, 177.60 Mtokens/s, log_likelihood (per token) -10.398359
+Iteration 166, 0.038527 s, 171.36 Mtokens/s, log_likelihood (per token) -10.396174
+Iteration 167, 0.034992 s, 188.67 Mtokens/s, log_likelihood (per token) -10.393941
+Iteration 168, 0.034844 s, 189.47 Mtokens/s, log_likelihood (per token) -10.391616
+Iteration 169, 0.035218 s, 187.46 Mtokens/s, log_likelihood (per token) -10.389594
+Iteration 170, 0.038527 s, 171.36 Mtokens/s, log_likelihood (per token) -10.387353
+Iteration 171, 0.036953 s, 178.66 Mtokens/s, log_likelihood (per token) -10.385215
+Iteration 172, 0.040952 s, 161.21 Mtokens/s, log_likelihood (per token) -10.383234
+Iteration 173, 0.034968 s, 188.80 Mtokens/s, log_likelihood (per token) -10.382050
+Iteration 174, 0.035032 s, 188.45 Mtokens/s, log_likelihood (per token) -10.380209
+Iteration 175, 0.035154 s, 187.80 Mtokens/s, log_likelihood (per token) -10.377910
+Iteration 176, 0.034883 s, 189.26 Mtokens/s, log_likelihood (per token) -10.376036
+Iteration 177, 0.034777 s, 189.83 Mtokens/s, log_likelihood (per token) -10.374220
+Iteration 178, 0.038117 s, 173.20 Mtokens/s, log_likelihood (per token) -10.372620
+Iteration 179, 0.058495 s, 112.86 Mtokens/s, log_likelihood (per token) -10.370524
+Iteration 180, 0.034547 s, 191.10 Mtokens/s, log_likelihood (per token) -10.368637
+Iteration 181, 0.034490 s, 191.41 Mtokens/s, log_likelihood (per token) -10.366215
+Iteration 182, 0.034555 s, 191.05 Mtokens/s, log_likelihood (per token) -10.364735
+Iteration 183, 0.034210 s, 192.98 Mtokens/s, log_likelihood (per token) -10.362849
+Iteration 184, 0.034554 s, 191.06 Mtokens/s, log_likelihood (per token) -10.361025
+Iteration 185, 0.034769 s, 189.88 Mtokens/s, log_likelihood (per token) -10.359167
+Iteration 186, 0.046223 s, 142.83 Mtokens/s, log_likelihood (per token) -10.356706
+Iteration 187, 0.045877 s, 143.90 Mtokens/s, log_likelihood (per token) -10.354625
+Iteration 188, 0.051521 s, 128.14 Mtokens/s, log_likelihood (per token) -10.353127
+Iteration 189, 0.036194 s, 182.40 Mtokens/s, log_likelihood (per token) -10.351299
+Iteration 190, 0.043525 s, 151.68 Mtokens/s, log_likelihood (per token) -10.349632
+Iteration 191, 0.034278 s, 192.60 Mtokens/s, log_likelihood (per token) -10.347900
+Iteration 192, 0.034531 s, 191.19 Mtokens/s, log_likelihood (per token) -10.346226
+Iteration 193, 0.034220 s, 192.92 Mtokens/s, log_likelihood (per token) -10.344743
+Iteration 194, 0.035668 s, 185.09 Mtokens/s, log_likelihood (per token) -10.343002
+Iteration 195, 0.035273 s, 187.17 Mtokens/s, log_likelihood (per token) -10.341151
+Iteration 196, 0.053323 s, 123.81 Mtokens/s, log_likelihood (per token) -10.339210
+Iteration 197, 0.061218 s, 107.84 Mtokens/s, log_likelihood (per token) -10.337578
+Iteration 198, 0.039060 s, 169.02 Mtokens/s, log_likelihood (per token) -10.336076
+Iteration 199, 0.032967 s, 200.26 Mtokens/s, log_likelihood (per token) -10.333811
+Iteration 200, 0.033075 s, 199.60 Mtokens/s, log_likelihood (per token) -10.332352
+Iteration 201, 0.032986 s, 200.14 Mtokens/s, log_likelihood (per token) -10.330767
+Iteration 202, 0.033119 s, 199.34 Mtokens/s, log_likelihood (per token) -10.329550
+Iteration 203, 0.032751 s, 201.58 Mtokens/s, log_likelihood (per token) -10.327738
+Iteration 204, 0.033478 s, 197.20 Mtokens/s, log_likelihood (per token) -10.326154
+Iteration 205, 0.033201 s, 198.85 Mtokens/s, log_likelihood (per token) -10.324742
+Iteration 206, 0.034634 s, 190.62 Mtokens/s, log_likelihood (per token) -10.323403
+Iteration 207, 0.053304 s, 123.85 Mtokens/s, log_likelihood (per token) -10.321631
+Iteration 208, 0.061102 s, 108.05 Mtokens/s, log_likelihood (per token) -10.320057
+Iteration 209, 0.063653 s, 103.72 Mtokens/s, log_likelihood (per token) -10.318719
+Iteration 210, 0.061631 s, 107.12 Mtokens/s, log_likelihood (per token) -10.317151
+Iteration 211, 0.045476 s, 145.17 Mtokens/s, log_likelihood (per token) -10.315899
+Iteration 212, 0.064923 s, 101.69 Mtokens/s, log_likelihood (per token) -10.314321
+Iteration 213, 0.053759 s, 122.81 Mtokens/s, log_likelihood (per token) -10.313276
+Iteration 214, 0.033738 s, 195.68 Mtokens/s, log_likelihood (per token) -10.311615
+Iteration 215, 0.034093 s, 193.64 Mtokens/s, log_likelihood (per token) -10.310455
+Iteration 216, 0.033625 s, 196.34 Mtokens/s, log_likelihood (per token) -10.309105
+Iteration 217, 0.033639 s, 196.26 Mtokens/s, log_likelihood (per token) -10.307966
+Iteration 218, 0.033531 s, 196.89 Mtokens/s, log_likelihood (per token) -10.306647
+Iteration 219, 0.033573 s, 196.64 Mtokens/s, log_likelihood (per token) -10.305688
+Iteration 220, 0.034062 s, 193.82 Mtokens/s, log_likelihood (per token) -10.304361
+Iteration 221, 0.033811 s, 195.26 Mtokens/s, log_likelihood (per token) -10.302666
+Iteration 222, 0.033537 s, 196.85 Mtokens/s, log_likelihood (per token) -10.301151
+Iteration 223, 0.037272 s, 177.13 Mtokens/s, log_likelihood (per token) -10.300121
+Iteration 224, 0.042275 s, 156.17 Mtokens/s, log_likelihood (per token) -10.298958
+Iteration 225, 0.058008 s, 113.81 Mtokens/s, log_likelihood (per token) -10.297363
+Iteration 226, 0.046294 s, 142.61 Mtokens/s, log_likelihood (per token) -10.295896
+Iteration 227, 0.033795 s, 195.35 Mtokens/s, log_likelihood (per token) -10.294935
+Iteration 228, 0.033561 s, 196.71 Mtokens/s, log_likelihood (per token) -10.293333
+Iteration 229, 0.034147 s, 193.34 Mtokens/s, log_likelihood (per token) -10.291934
+Iteration 230, 0.033258 s, 198.51 Mtokens/s, log_likelihood (per token) -10.290206
+Iteration 231, 0.033727 s, 195.75 Mtokens/s, log_likelihood (per token) -10.289129
+Iteration 232, 0.033458 s, 197.32 Mtokens/s, log_likelihood (per token) -10.288298
+Iteration 233, 0.033514 s, 196.99 Mtokens/s, log_likelihood (per token) -10.286921
+Iteration 234, 0.033526 s, 196.92 Mtokens/s, log_likelihood (per token) -10.285498
+Iteration 235, 0.033517 s, 196.97 Mtokens/s, log_likelihood (per token) -10.284426
+Iteration 236, 0.033372 s, 197.83 Mtokens/s, log_likelihood (per token) -10.283577
+Iteration 237, 0.037779 s, 174.75 Mtokens/s, log_likelihood (per token) -10.282579
+Iteration 238, 0.041553 s, 158.88 Mtokens/s, log_likelihood (per token) -10.281165
+Iteration 239, 0.038025 s, 173.62 Mtokens/s, log_likelihood (per token) -10.279975
+Iteration 240, 0.033345 s, 197.99 Mtokens/s, log_likelihood (per token) -10.279124
+Iteration 241, 0.038832 s, 170.01 Mtokens/s, log_likelihood (per token) -10.278053
+Iteration 242, 0.038572 s, 171.16 Mtokens/s, log_likelihood (per token) -10.276754
+Iteration 243, 0.033719 s, 195.79 Mtokens/s, log_likelihood (per token) -10.275516
+Iteration 244, 0.033342 s, 198.00 Mtokens/s, log_likelihood (per token) -10.274263
+Iteration 245, 0.033513 s, 196.99 Mtokens/s, log_likelihood (per token) -10.273109
+Iteration 246, 0.036123 s, 182.76 Mtokens/s, log_likelihood (per token) -10.271971
+Iteration 247, 0.045376 s, 145.49 Mtokens/s, log_likelihood (per token) -10.271119
+Iteration 248, 0.061581 s, 107.21 Mtokens/s, log_likelihood (per token) -10.270090
+Iteration 249, 0.058339 s, 113.16 Mtokens/s, log_likelihood (per token) -10.268725
+Iteration 250, 0.061781 s, 106.86 Mtokens/s, log_likelihood (per token) -10.267859
+Iteration 251, 0.040444 s, 163.24 Mtokens/s, log_likelihood (per token) -10.266397
+Iteration 252, 0.033640 s, 196.25 Mtokens/s, log_likelihood (per token) -10.265754
+Iteration 253, 0.033453 s, 197.35 Mtokens/s, log_likelihood (per token) -10.264513
+Iteration 254, 0.033734 s, 195.71 Mtokens/s, log_likelihood (per token) -10.263727
+Iteration 255, 0.033877 s, 194.88 Mtokens/s, log_likelihood (per token) -10.262150
+Iteration 256, 0.037429 s, 176.39 Mtokens/s, log_likelihood (per token) -10.261364
+Iteration 257, 0.033691 s, 195.95 Mtokens/s, log_likelihood (per token) -10.260207
+Iteration 258, 0.033425 s, 197.51 Mtokens/s, log_likelihood (per token) -10.258834
+Iteration 259, 0.033278 s, 198.39 Mtokens/s, log_likelihood (per token) -10.257851
+Iteration 260, 0.033583 s, 196.58 Mtokens/s, log_likelihood (per token) -10.256839
+Iteration 261, 0.042682 s, 154.68 Mtokens/s, log_likelihood (per token) -10.256385
+Iteration 262, 0.052777 s, 125.09 Mtokens/s, log_likelihood (per token) -10.255725
+Iteration 263, 0.059335 s, 111.26 Mtokens/s, log_likelihood (per token) -10.254410
+Iteration 264, 0.059793 s, 110.41 Mtokens/s, log_likelihood (per token) -10.253559
+Iteration 265, 0.060654 s, 108.85 Mtokens/s, log_likelihood (per token) -10.252079
+Iteration 266, 0.060419 s, 109.27 Mtokens/s, log_likelihood (per token) -10.251529
+Iteration 267, 0.060093 s, 109.86 Mtokens/s, log_likelihood (per token) -10.250328
+Iteration 268, 0.059224 s, 111.47 Mtokens/s, log_likelihood (per token) -10.249017
+Iteration 269, 0.059595 s, 110.78 Mtokens/s, log_likelihood (per token) -10.247550
+Iteration 270, 0.061890 s, 106.67 Mtokens/s, log_likelihood (per token) -10.246412
+Iteration 271, 0.060565 s, 109.01 Mtokens/s, log_likelihood (per token) -10.245641
+Iteration 272, 0.058164 s, 113.50 Mtokens/s, log_likelihood (per token) -10.244950
+Iteration 273, 0.047220 s, 139.81 Mtokens/s, log_likelihood (per token) -10.243874
+Iteration 274, 0.051394 s, 128.46 Mtokens/s, log_likelihood (per token) -10.242999
+Iteration 275, 0.056348 s, 117.16 Mtokens/s, log_likelihood (per token) -10.241952
+Iteration 276, 0.072013 s, 91.68 Mtokens/s, log_likelihood (per token) -10.240918
+Iteration 277, 0.067810 s, 97.36 Mtokens/s, log_likelihood (per token) -10.240505
+Iteration 278, 0.063513 s, 103.95 Mtokens/s, log_likelihood (per token) -10.239153
+Iteration 279, 0.063846 s, 103.40 Mtokens/s, log_likelihood (per token) -10.238448
+Iteration 280, 0.062259 s, 106.04 Mtokens/s, log_likelihood (per token) -10.237547
+Iteration 281, 0.055660 s, 118.61 Mtokens/s, log_likelihood (per token) -10.236456
+Iteration 282, 0.061263 s, 107.76 Mtokens/s, log_likelihood (per token) -10.235194
+Iteration 283, 0.059811 s, 110.38 Mtokens/s, log_likelihood (per token) -10.233970
+Iteration 284, 0.040693 s, 162.24 Mtokens/s, log_likelihood (per token) -10.233197
+Iteration 285, 0.033278 s, 198.39 Mtokens/s, log_likelihood (per token) -10.232046
+Iteration 286, 0.037364 s, 176.69 Mtokens/s, log_likelihood (per token) -10.231536
+Iteration 287, 0.035140 s, 187.87 Mtokens/s, log_likelihood (per token) -10.230582
+Iteration 288, 0.033013 s, 199.98 Mtokens/s, log_likelihood (per token) -10.229497
+Iteration 289, 0.032957 s, 200.32 Mtokens/s, log_likelihood (per token) -10.228456
+Iteration 290, 0.058904 s, 112.08 Mtokens/s, log_likelihood (per token) -10.228067
+Iteration 291, 0.059522 s, 110.92 Mtokens/s, log_likelihood (per token) -10.226806
+Iteration 292, 0.057324 s, 115.17 Mtokens/s, log_likelihood (per token) -10.225872
+Iteration 293, 0.036744 s, 179.67 Mtokens/s, log_likelihood (per token) -10.225148
+Iteration 294, 0.042498 s, 155.35 Mtokens/s, log_likelihood (per token) -10.224481
+Iteration 295, 0.034178 s, 193.16 Mtokens/s, log_likelihood (per token) -10.223903
+Iteration 296, 0.038126 s, 173.16 Mtokens/s, log_likelihood (per token) -10.222940
+Iteration 297, 0.034178 s, 193.16 Mtokens/s, log_likelihood (per token) -10.222353
+Iteration 298, 0.034242 s, 192.80 Mtokens/s, log_likelihood (per token) -10.221877
+Iteration 299, 0.034187 s, 193.11 Mtokens/s, log_likelihood (per token) -10.220885
+Dump model /mnt/text8_testing/train.model
+Write Info /mnt/text8_testing/train.info ntop 10
+Dump Z /mnt/text8_testing/train.z.estimate
+['Word2Sense.py', '/mnt/text8_testing/train.z.estimate', '/mnt/text8_testing/train.vocab', '/mnt/text8_testing/counts.contexts.vocab', '/mnt/text8_testing/Topic_embeddings.pkl', '/mnt/text8_testing/Topic_JS.pkl', '/mnt/text8_testing/Word2Sense.pkl', '/mnt/text8_testing/Raw_Word2Sense.pkl', '/mnt/text8_testing/Word_probability.pkl', '/mnt/text8_testing/Topic_groups.pkl', '300', '0.1', '10', '225']
+11815
+Test onpreprocessing/testsets/SCWS_avg_scores.txt: spearman coefficient: SpearmanrResult(correlation=-0.40667595976051873, pvalue=1.2237146181194406e-80)
+Test onpreprocessing/testsets/radinsky_mturk.txt: spearman coefficient: SpearmanrResult(correlation=-0.37297273684534227, pvalue=6.66327651656924e-11)
+Test onpreprocessing/testsets/ws353.txt: spearman coefficient: SpearmanrResult(correlation=-0.38567427348514594, pvalue=5.774092918235318e-14)
+Test onpreprocessing/testsets/rg.txt: spearman coefficient: SpearmanrResult(correlation=-0.24655961688357567, pvalue=0.04771033528693123)
+Test onpreprocessing/testsets/mc.txt: spearman coefficient: SpearmanrResult(correlation=-0.3229364911838459, pvalue=0.08175040870949173)
+Test onpreprocessing/testsets/luong_rare.txt: spearman coefficient: SpearmanrResult(correlation=-0.1953480771283735, pvalue=6.080942564772938e-19)
+Test onpreprocessing/testsets/ws353_similarity.txt: spearman coefficient: SpearmanrResult(correlation=-0.39219585769773646, pvalue=7.16739945833025e-09)
+Test onpreprocessing/testsets/ws353_relatedness.txt: spearman coefficient: SpearmanrResult(correlation=-0.34908508074129824, pvalue=1.2399616345274818e-08)
+Test onpreprocessing/testsets/bruni_men.txt: spearman coefficient: SpearmanrResult(correlation=-0.29578625149836996, pvalue=1.223421710355515e-61)
+Test onpreprocessing/testsets/Simlex_sim.txt: spearman coefficient: SpearmanrResult(correlation=-0.07861772960520877, pvalue=0.012933159482142402)
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+sh: 1: omarlevy/scripts/clean_corpus.sh: not found
+./Example.sh: 96: ./Example.sh: Syntax error: redirection unexpected
