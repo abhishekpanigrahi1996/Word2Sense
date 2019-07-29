@@ -21,7 +21,7 @@ class Bigraph
 		TVID NV() { return v.NumVertices(); }
 		TEID NE() { return u.NumEdges(); }
 
-		static void Generate(std::string, std::vector<std::pair<TUID, TVID>> &, TVID nv = 0);
+		static void Generate(std::string, std::vector<std::tuple<TUID, TVID, float>> &, TVID nv = 0);
 
 		template <class Function>
 			void VisitU(Function f)

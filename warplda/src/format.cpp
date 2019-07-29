@@ -22,19 +22,10 @@ template <bool testMode = false>
 void parse_document(string &line, std::vector<TVID> &v, Vocab &vocab)
 {
     std::istringstream sin(line);
-    std::string w;
+    std::string doc_id, word_id;
     v.clear();
     if (FLAGS_type == "text")
     {
-        for (int i = 0; sin >> w; i++)
-            if (i >= FLAGS_skip)
-            {
-                TVID vid;
-                if (!testMode) vid = vocab.addWord(w);
-                else vid = vocab.getIdByWord(w);
-
-                if (vid != -1) v.push_back(vid);
-            }
     }
     else if (FLAGS_type == "uci")
     {
@@ -53,32 +44,26 @@ void text_to_bin(std::string in, std::string out)
 {
     size_t num_tokens = 0;
     Vocab v;
-    if (testMode || FLAGS_type != "text")
-        v.load(FLAGS_vocab_in);
+    v.load(FLAGS_vocab_in);
     int doc_id = 0;
-    std::vector<std::pair<TUID, TVID>> edge_list;
+    std::vector<std::tuple<TVID, TVID, float>> edge_list;
     std::vector<TVID> vlist;
     bool success = ForEachLinesInFile(in, [&](std::string line)
     {
         parse_document<testMode>(line, vlist, v);
-        for (auto word_id: vlist)
-            edge_list.emplace_back(doc_id, word_id);
-
+	std::istringstream sin(line);
+	int doc_id_t, word_id_t;
+        float count_id;
+	sin >> doc_id_t >> word_id_t >> count_id;
+        edge_list.emplace_back(doc_id_t-1, word_id_t-1, count_id);
         doc_id++;
         num_tokens += vlist.size();
     });
     if (!success)
         throw std::runtime_error(std::string("Failed to input file ") + in);
     // Shuffle tokens
-    std::vector<TVID> new_vid(v.nWords());
-    for (unsigned i = 0; i < new_vid.size(); i++)
-        new_vid[i] = i;
-    if (!testMode)
-        std::random_shuffle(new_vid.begin(), new_vid.end());
-    v.RearrangeId(new_vid.data());
     v.store(FLAGS_vocab_out);
-    for (auto &e : edge_list)
-        e.second = new_vid[e.second];
+    
     if (!testMode)
         Bigraph::Generate(out, edge_list);
     else
