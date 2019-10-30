@@ -7,4 +7,4 @@ We have made minor changes in WarpLDA codebase, specifically in files Bigraph.cp
 Create a file containing a sentence in each line. Example.sh contains the entire pipeline for getting Word2Sense embeddings from the corpus, get performance scores on various similarity tasks and obtain WordCtxt2Sense embeddings for the WSI and SCWS tasks respectively.  
 
 # Pretrained Vectors
-In the link (https://drive.google.com/file/d/1kqxQm129RVfanlnEsJnyYjygsFhA3wH3/view?usp=sharing), you can find a zip file that contains a text file. The text file contains pretrained Word2Sense Vectors, where in each line there is a word and it's 2250 dimensional sparse representation.
+In the link (https://drive.google.com/file/d/1kqxQm129RVfanlnEsJnyYjygsFhA3wH3/view?usp=sharing), you can find a zip file that contains a text file. The text file contains pretrained Word2Sense Vectors, where each line contains a word and it's 2250 dimensional sparse representation.
