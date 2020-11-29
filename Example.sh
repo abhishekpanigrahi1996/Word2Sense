@@ -76,9 +76,9 @@ python Calculate_similarityscores.py ${DIR}/Word2Sense.pkl ${similarity_testpath
 
 #Wordctxt2sense4WSI
 #We show the performance of Wordctxt2sense on WSI Semeval 2010 dataset
-#Preprocessing to extract contexts from xml file and converting them to tsvd format
-python Preprocess_wordctxt2sense.py  ${Semeval_directory}/nouns  ${DIR}/train.vocab ${DIR}/Raw_Word2Sense.pkl
-python Preprocess_wordctxt2sense.py  ${Semeval_directory}/verbs  ${DIR}/train.vocab ${DIR}/Raw_Word2Sense.pkl
+#Preprocessing to extract contexts from xml file and converting them to tsvd format for WSI task
+python Preprocess_WSI.py  ${Semeval_directory}/nouns  ${DIR}/train.vocab ${DIR}/Raw_Word2Sense.pkl
+python Preprocess_WSI.py  ${Semeval_directory}/verbs  ${DIR}/train.vocab ${DIR}/Raw_Word2Sense.pkl
 
 #function that calls Inference file repeatedly
 func_WSI () {
