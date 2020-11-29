@@ -65,10 +65,11 @@ def compute_Word2Sense(word_topic_dis, context_topic_dis, sim_mat, vocab, avg_to
 
 def main():
     print (sys.argv)
-    if len(sys.argv) != 14:
+    if len(sys.argv) != 15:
         print ("Incorrect Usage Use \n python Word2Sense.py <Word topic file> <vocab file> <Word count file> " 
                 + "<Topic distribution file (in pkl)> <Topic similarity matrix file (in pkl)> <Word2sense destination file (in pkl)> <unprocessed word2sense destination file(in pkl)> " 
-                + "<Destination file for raw word probability (in pkl)> <Destination file for Topic membership in clustering (in pkl)> "  
+                + "<Destination file for raw word probability (in pkl)> <Destination file for Topic membership in clustering (in pkl)> "
+                + "<Destination file for Topic Probabilty (in pkl)> "
                 + " <num_topics> <alpha> " 
                 + "<sparsity_in_topic_dis>  " 
                 + "<final_embedding_dim> ")
@@ -84,12 +85,13 @@ def main():
     raw_word_embed_file = sys.argv[7]    
     word_probability_file = sys.argv[8]
     cluster_groups_file = sys.argv[9]
+    topic_prob_file = sys.argv[10]
     
-    num_topics = int(sys.argv[10])
-    alpha = float(sys.argv[11])
+    num_topics = int(sys.argv[11])
+    alpha = float(sys.argv[12])
 
-    sparsity_in_topic_dis = int(sys.argv[12])
-    final_embedding_dim   = int(sys.argv[13])
+    sparsity_in_topic_dis = int(sys.argv[13])
+    final_embedding_dim   = int(sys.argv[14])
 
 
     #compute real alpha and vocabulary file
@@ -137,6 +139,7 @@ def main():
     pickle.dump(word2sense, open(processed_word_embed_file, 'wb'))
     pickle.dump(word_prob, open(word_probability_file, 'wb'))
     pickle.dump(cluster_group, open(cluster_groups_file, 'wb'))
-
+    pickle.dump(avg_topic_prob, open(topic_prob_file, 'wb'))
+    
 if __name__ == '__main__':
     main()
