@@ -4,23 +4,23 @@ import math
 
 class InferContext:
     """docstring for InferContext"""
-    def __init__(self, model_by_word, infer_data,num_topics, vocab_size, num_docs, initial_wt_matrix, lambda_reg, topic_nnz, avg_doc_sz):
+    def __init__(self, model_by_word, infer_data,num_topics, vocab_size, num_docs, lambda_reg, avg_doc_sz):
         #super(InferContext, self).__init__()
         self.model_by_word = model_by_word
         self.infer_data    = infer_data
         self.num_topics    = num_topics
         self.vocab_size    = vocab_size
         self.num_docs      = num_docs
-        self.wt_arr        = initial_wt_matrix
         self.lambda_reg    = lambda_reg
-        self.topic_nnz     = topic_nnz
-        self.nnz_index     = np.nonzero(initial_wt_matrix)[0] 
         self.avg_doc_sz    = avg_doc_sz
     
         
 
     # Return 0.0 ifn the calculation did not converge            
-    def infer_doc_in_file(self, doc_id, iters, Lfguess):
+    def infer_doc_in_file(self, doc_id, iters, initial_wt_matrix, Lfguess):
+        self.wt_arr    = initial_wt_matrix
+        self.nnz_index = np.nonzero(initial_wt_matrix)[0]
+
         doc = self.infer_data.getrow(doc_id)
         data = doc.data
         M_slice   = []
