@@ -119,8 +119,8 @@ def main():
         initial_wts = np.ones((num_topics, )) / num_topics
     else:
         #initial_wts = np.asarray([float(elem) for elem in [line.strip().split() for line in open(initial_wt_file).readlines()][0]])
+        #initial_wts is either a single vector or a dictionary of vectors with keys given by doument id.
         initial_wts = pickle.load(open(initial_wt_file, 'rb'))
-    topic_nnz = len(np.nonzero(initial_wts)[0])
 
     print ("Loading data from inference file " + infer_file)
     entries = read_infer_file(infer_file)
@@ -137,10 +137,14 @@ def main():
 
     #start inference
     write_file = open(output_dir + '/inferred_topics.txt', 'w')
-    inference_model = InferContext(model_by_word, infer_data, num_topics, vocab_size, num_docs, initial_wts, lambda_reg, topic_nnz, avg_doc_sz)
+    inference_model = InferContext(model_by_word, infer_data, num_topics, vocab_size, num_docs, lambda_reg, avg_doc_sz)
     avg_llh = 0.0
     for doc_id in range(num_docs):
-        llh, wt = inference_model.infer_doc_in_file(doc_id, iters, Lfguess)
+        if isinstance(initial_wts, dict):
+            initial_wt = initial_wts[doc_id + doc_begin]     
+        else:
+            initial_wt = initial_wts   
+        llh, wt = inference_model.infer_doc_in_file(doc_id, iters, initial_wt, Lfguess)
         avg_llh += llh
 
         nnz_indices = np.argsort(-wt)
@@ -155,7 +159,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-        
-            
